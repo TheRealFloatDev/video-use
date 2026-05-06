@@ -1,6 +1,6 @@
 {
   "name": "video-use",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server + CLI to download videos and extract key frames for AI agents",
   "license": "MIT",
   "private": false,
@@ -54,4 +54,3 @@
     "typescript": "^5.8.3"
   }
 }
-

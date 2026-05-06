@@ -1,3 +1,8 @@
+---
+name: video-use
+description: "Use video-use MCP tools to download videos and extract representative frames + timestamps for analysis. Prefer video_frames_extract + manifest.json over manual ffmpeg/yt-dlp usage."
+---
+
 # video-use MCP Skill
 
 Use the `video-use` MCP server to analyze videos by extracting key frames.
