@@ -1,0 +1,57 @@
+{
+  "name": "video-use",
+  "version": "0.1.0",
+  "description": "MCP server + CLI to download videos and extract key frames for AI agents",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "video-use": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "video",
+    "frames",
+    "ffmpeg",
+    "yt-dlp",
+    "cursor",
+    "claude",
+    "agent"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -w -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/cli.js",
+    "prepack": "npm run clean && npm run build",
+    "prepublishOnly": "npm run prepack"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "@clack/prompts": "^1.2.0",
+    "commander": "^14.0.0",
+    "execa": "^9.6.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.3"
+  }
+}
+
