@@ -1,4 +1,5 @@
 # video-use
+
 An MCP server + CLI that extracts key video frames (from a local file or a video URL) so AI agents can analyze videos using images + timestamps.
 
 ## Prerequisites
@@ -53,10 +54,11 @@ Recommended: run `video-use init` to create/update the file automatically.
 
 ## Guided MCP installation (recommended)
 
-`video-use init` uses [`add-mcp`](https://www.npmjs.com/package/add-mcp) under the hood to install the MCP server for the agents you choose (Cursor, VS Code/Copilot, Claude Code/Desktop, etc.).
+`video-use init` uses [add-mcp](https://www.npmjs.com/package/add-mcp) under the hood to install the MCP server for the agents you choose (Cursor, VS Code/Copilot, Claude Code/Desktop, etc.).
 
 ## MCP tools
 
 - `video_frames_extract`: download (if URL), extract scene-change frames + fallback FPS sampling, merge, time-dedupe, cap with `maxFrames`, and write a manifest.
 - `video_probe`: probe a local file (ffprobe/ffmpeg) or URL (yt-dlp metadata).
 - `video_cleanup`: delete `.video-use` artifacts (optional `runHash`).
+
